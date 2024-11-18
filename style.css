@@ -1,0 +1,139 @@
+* {
+  box-sizeing: content-box; /* Changes all boxes to a variant where padding is added on the inside */
+}
+* {
+  border-start-end-radius: ; /* Changes all boxes to a variant where padding is added on the inside */
+}
+img {
+  max-width: 100%;
+}
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.header-content-left {
+    font-family: "Lora";
+    font-size:20px;
+    font-weight: 500;
+    display: flex;
+    padding: 20px; 
+    color: inherit; 
+    text-decoration: none; 
+}
+
+.header-content-right {
+    font-family: "Lora";
+    font-size:20px;
+    font-weight: 500;
+    display: flex;
+    padding: 20px; 
+    gap: 50px;
+    color: inherit; 
+    text-decoration: none; 
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Sora', sans-serif; /* Set Sora for headings */
+}
+body {
+    font-family: 'Lora', serif; /* Set Lora as the default font for body text */
+}
+/* span google denna*/
+h1 {
+  font-family: "Sora", sans-serif;
+  font-weight: 500; /* put weight here */
+  font-style: bold;
+  font-optical-sizing: auto;
+}
+/* box-sizeing: content-box; */
+.hero-paragraph {
+  font-family: "Montserrat", Verdana, Tahoma;
+  font-size: 40px;
+  text-align: center;
+}
+
+
+p.customfont {
+  font-family: "Lora", Verdana, Tahoma;
+}
+
+a {
+color: inherit; 
+text-decoration: none; 
+}
+
+.hero-container {
+  background-image: url("test_image01.png");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat; /* Optional, prevents the image from repeating */
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(129, 69, 69);
+}
+.toolbar {
+  padding: 10px;
+  display: flex;
+  background-color: rgb(35, 35, 35);
+}
+.logo-wrapper {
+  padding: 100px;
+  gap: 200px;
+  justify-content: space-evenly;
+}
+.menu-wrapper {
+  padding: 100px;
+  gap: 200px;
+  justify-content: space-evenly;
+}
+.container {
+  max-width: 750px;
+}
+.container2 div{ /* screen sizes test*/
+    background-color: bisque;
+    flex direction: column;
+    object-fit: cover; /* sätt hur en bild förändras */
+    @media screen and(max-width: 600px){
+        
+    }media
+}
+
+
+/* h1 {
+    // <uniquifier>: Use a unique and descriptive class name
+    // <weight>: Use a value from 100 to 900 
+    
+    .montserrat <MontserratV1> 
+    {
+      font-family: "Montserrat", system-ui;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
+      font-style: normal;
+    }
+}
+
+.hero-paragraph {
+    font-family: 
+    font-size: 40px;
+    margin-top: 80px;
+    text-align: center;
+    
+}
+
+<style type="text/css">
+    @font-face {
+    font-family: "Montserrat";
+    src: url(https://fonts.google.com/specimen/Montserrat?query=mont+se) format("truetype");
+}
+
+https://fonts.google.com/specimen/Montserrat?query=mont+se
+    p.customfont { 
+        font-family: "Montserrat", Verdana, Tahoma;
+}
+
+body {
+    background-color: rgb(206, 192, 192); 
+}*/
