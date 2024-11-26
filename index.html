@@ -9,64 +9,80 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700&family=Lora:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>backdrop</title>
   </head>
 
-<header>
-  <div class="header-wrapper">
-  <section class="header-content-left">
-    <div class="about-me">
-      <a href="#">About Me</a>
-    </div>
-  </section>
+  <div class="wrapper">
+    <!-- start of wrapper-->
 
-  <section class="header-content-right">
-    <div class="project1">
-      <a href="#">link1</a>
-    </div>
-    <div class="project1">
-      <a href="#">link2</a>
-    </div>
-    <div class="project1">
-      <a href="#">link3</a>
-    </div>
-    <div class="contact">
-      <a href="mailto: bjarnhakansson@gmail.com">Contact</a>
-    </div>
-    </section>
+    <body>
+      <header>
+        <!-- Nav links in header-->
+        <nav class="nav-links">
+          <a href="#">Om mig</a>
+          <a href="#">Projekt</a>
+          <a href="mailto: bjarnhakansson@gmail.com">Kontakt</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero-container">
+          <div class="container-image">
+            <img
+              src="test_image01.png"
+              alt="Bild av Björn Håkansson, en otroligt välskapt man i sina bästa år som ler mot kameran"
+            />
+          </div>
+          <div class="hero-paragraph">
+            <img src="text_icon.svg" alt="hej -Björn, veteran från spelindustrin " /> 
+          </div>
+        </section>
+
+        <section class="knowlage-container">
+          <div class="knowlage-title">
+            <h2 class="programknowlage">Programkunskaper</h2>
+
+            <div class="icon-container">
+              <img src="photoshop_icon.svg" alt="photoshop" /> 
+              <img src="illustraitor_icon.svg" alt="illustraitor" />
+              <img src="blender_icon.svg" alt="blender" />
+              <img src="figma_icon.svg" alt="figma" />
+              <img src="aftereffects_icon.svg" alt="afterv effects" />
+              <img src="painter_icon.svg" alt="substance painter" >
+              <img src="html_icon.svg" alt="hyper text markup language" >
+          </div>
+        </section>
+
+        <section class="interests-container">
+          <h2 class="interests">Intressen</h2>
+          <div class="interests-list">
+            <div class="interest-item">Tillgänglighet</div>
+            <div class="interest-item">UX/UI</div>
+            <div class="interest-item">App</div>
+            <div class="interest-item">Webb</div>
+            <div class="interest-item">Spelutveckling</div>
+          </div>
+        </section>
+
+
+
+<div class="project_container">
+  <h2 class="projects">Projekt</h2>
+  <div class="project_links">
+  <a href="#link1"><img src="Project_Haven.png" alt="Image 1"></a>
+  <a href="project_faintwatch.html"><img src="Project_faintwatch.png" alt="Image 2"></a>
+  <a href="#link3"><img src="Project_regen.png" alt="Image 3"></a>
+</div>
+</div>
+
+      </main>
+
+    </body>
   </div>
-</header>
-
-
-  <body> 
-    <main>
-      <section class="hero-container"> 
-        <div class="container-paragraph">
-          <h1 class="hero-paragraph">Björn Håkansson</h1>
-        </div>
-      </section>
-      <div class="toolbar"> 
-
-        <div class="container" style="display: flex justify-content">
-          <div class="logo-wrapper" style="display: flex">Logo</div>
-          <div class="menu-wrapper" style="display: flex">
-            <p href="#">
-              link1
-              <img class="link-images" src="test1.png" />
-            </p>
-          </div class="container2"> 
-          <div>
-            <p href="#">link2</p>
-          </div>
-          </div>
-            <p href="#">link3</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </main>
-    <div class="box"></div>
-  </body>
+  <!-- end of wrapper-->
 </html>
