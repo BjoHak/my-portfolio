@@ -245,11 +245,11 @@ p.customfont {
   transform: scale(1.1);
 }
 
-.project_container {
+.project-container {
   padding-top: 120px;
 }
 
-.project_links {
+.project-links {
   display: flex;
   justify-content: space-between;
   gap: 20px;
@@ -257,17 +257,17 @@ p.customfont {
   padding: 10px;
 }
 
-.project_links a {
+.project-links a {
   display: block;
 }
 
-.project_links img {
+.project-links img {
   width: 340px;
   height: auto;
   transition: transform 0.3s ease;
 }
 
-.project_links img:hover {
+.project-links img:hover {
   transform: scale(1.05);
 }
 
