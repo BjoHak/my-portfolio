@@ -16,73 +16,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>backdrop</title>
   </head>
-
-  <div class="wrapper">
-    <!-- start of wrapper-->
-
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <link rel="stylesheet" href="style.css" />
+      <script src="script.js"></script>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700&family=Lora:wght@400;700&display=swap"
+        rel="stylesheet"
+      />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>backdrop</title>
+    </head>
     <body>
-      <header>
-        <!-- Nav links in header-->
-        <nav class="nav-links">
-          <a href="#">Om mig</a>
-          <a href="#">Projekt</a>
-          <a href="mailto: bjarnhakansson@gmail.com">Kontakt</a>
-        </nav>
-      </header>
+      <div class="wrapper">
+        <!-- start of wrapper-->
+        <header>
+          <!-- Nav links in header-->
+          <nav class="nav-links">
+            <a href="om-mig.html">Om mig</a>
+            <a href="#projects">Projekt</a>
+            <a href="mailto: bjarnhakansson@gmail.com">Kontakt</a>
+          </nav>
+        </header>
 
-      <main>
-        <section class="hero-container">
-          <div class="container-image">
-            <img
-              src="test-image01.png"
-              alt="Bild av Björn Håkansson, en otroligt välskapt man i sina bästa år som ler mot kameran"
-            />
+        <main>
+          <section class="hero-container">
+            <div class="container-image">
+              <img
+                class="face-icon"
+                src="test-image01.png"
+                alt="Bild av Björn Håkansson, en otroligt välskapt man i sina bästa år som ler mot kameran"
+              />
+              <img
+                class="text-icon"
+                src="text-icon.svg"
+                alt="hej -Björn, veteran från spelindustrin"
+              />
+            </div>
+          </section>
+
+          <section class="knowlage-container">
+            <div class="knowlage-title">
+              <h2 class="programknowlage">Programkunskaper</h2>
+
+              <div class="icon-container">
+                <img src="photoshop_icon.svg" alt="photoshop" />
+                <img src="illustraitor_icon.svg" alt="illustraitor" />
+                <img src="blender_icon.svg" alt="blender" />
+                <img src="figma_icon.svg" alt="figma" />
+                <img src="aftereffects_icon.svg" alt="afterv effects" />
+                <img src="painter_icon.svg" alt="substance painter" />
+                <img src="html_icon.svg" alt="hyper text markup language" />
+              </div>
+            </div>
+          </section>
+
+          <section class="interests-container">
+            <h2 class="interests">Intressen</h2>
+            <div class="interests-list">
+              <div class="interest-item">Tillgänglighet</div>
+              <div class="interest-item">UX/UI</div>
+              <div class="interest-item">App</div>
+              <div class="interest-item">Webb</div>
+              <div class="interest-item">Spelutveckling</div>
+            </div>
+          </section>
+
+          <div id="projects" class="project-container">
+            <h2 class="projects">Projekt</h2>
+            <div class="project-links">
+              <a href="#link4"
+                ><img src="project-haven.png" alt="projekt haven"
+              /></a>
+              <a href="project_faintwatch.html"
+                ><img src="project-faintwatch.png" alt="projekt faintwatch"
+              /></a>
+              <a href="#link3"
+                ><img src="project-regen.png" alt="projekt regen"
+              /></a>
+            </div>
           </div>
-          <div class="hero-paragraph">
-            <img src="text-icon.svg" alt="hej -Björn, veteran från spelindustrin " /> 
-          </div>
-        </section>
-
-        <section class="knowlage-container">
-          <div class="knowlage-title">
-            <h2 class="programknowlage">Programkunskaper</h2>
-
-            <div class="icon-container">
-              <img src="photoshop_icon.svg" alt="photoshop" /> 
-              <img src="illustraitor_icon.svg" alt="illustraitor" />
-              <img src="blender_icon.svg" alt="blender" />
-              <img src="figma_icon.svg" alt="figma" />
-              <img src="aftereffects_icon.svg" alt="afterv effects" />
-              <img src="painter_icon.svg" alt="substance painter" >
-              <img src="html_icon.svg" alt="hyper text markup language" >
-          </div>
-        </section>
-
-        <section class="interests-container">
-          <h2 class="interests">Intressen</h2>
-          <div class="interests-list">
-            <div class="interest-item">Tillgänglighet</div>
-            <div class="interest-item">UX/UI</div>
-            <div class="interest-item">App</div>
-            <div class="interest-item">Webb</div>
-            <div class="interest-item">Spelutveckling</div>
-          </div>
-        </section>
-
-
-
-<div class="project-container">
-  <h2 class="projects">Projekt</h2>
-  <div class="project-links">
-  <a href="#link4"><img src="project-haven.png" alt="projekt haven"></a>
-  <a href="project_faintwatch.html"><img src="project-faintwatch.png" alt="projekt faintwatch"></a>
-  <a href="#link3"><img src="project-regen.png" alt="projekt regen"></a>
-</div>
-</div>
-
-      </main>
-
+        </main>
+      </div>
     </body>
-  </div>
+  </html>
   <!-- end of wrapper-->
 </html>

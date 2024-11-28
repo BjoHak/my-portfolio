@@ -39,15 +39,20 @@ a:hover {
   margin: 0 auto;
   box-sizing: border-box;
 }
-
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 46px;
+  }
+}
 .h1 {
-  color: #323232;
+  color: #832d2d;
 }
 
 h2 {
   font-family: "Sora", sans-serif;
   font-size: 36px;
-  padding: 20px;
+
+  color: #3f3f3f;
 }
 
 .nav-links {
@@ -59,11 +64,41 @@ h2 {
   padding: 20px;
   gap: 2rem;
 }
+@media (max-width: 768px) {
+  .nav-links {
+    font-size: 0.8rem;
+    gap: 1rem;
+    padding: 10px;
+  }
+}
 
-.hero-paragraph {
-  display: flex;
-  flex-direction: row;
-  flex: 1;
+.text-icon {
+  max-width: 500px;
+  max-height: 500px;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .text-icon {
+    max-width: 140px;
+    max-height: 140px;
+    transform: translate(-200%, +10%);
+  }
+}
+
+.face-icon {
+  max-width: 800px;
+  max-height: 800px;
+
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .face-icon {
+    transform: translate(-30%, 0%);
+    min-width: 450px;
+    min-width: 450px;
+  }
 }
 
 .hero-text_p1 {
@@ -82,8 +117,7 @@ p.customfont {
 .container-image {
   display: flex;
   max-width: 100%;
-  max-width: 800px;
-  max-height: 800px;
+  align-items: center;
 }
 
 @media (max-width: 768px) {
@@ -102,27 +136,30 @@ p.customfont {
 
 .knowlage-container {
   position: relative;
-  padding-top: 64px;
   text-align: center;
+  background-color: rgb(240, 240, 240);
+  margin-top: 60px;
+  overflow: hidden;
+  padding: 20px;
+  border-radius: 20px;
 }
 
-.knowlage-container::before {
+.interests-container::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-  padding-top: 120px;
   width: 100%;
   height: 100%;
-  background: url("banner01.png") no-repeat center;
-  background-size: cover;
-  z-index: 1;
+  background-color: rgb(235, 235, 235);
+  z-index: -1;
+  border-radius: 20px;
 }
 
 .programknowlage {
   position: relative;
   font-size: 2rem;
-  margin-bottom: 20px;
+  padding-bottom: 32px;
   z-index: 2;
 }
 
@@ -180,22 +217,13 @@ p.customfont {
 .interests-container {
   position: relative;
   text-align: center;
-  padding-top: 180px;
+  background-color: rgb(240, 240, 240);
+  margin-top: 60px;
+  overflow: hidden;
+  padding: 20px;
+  border-radius: 20px;
 }
 
-.interests-container::before {
-  content: "";
-  position: absolute;
-  object-fit: contain;
-  top: 0;
-  left: 0;
-  padding-top: 160px;
-  width: 100%;
-  height: 100%;
-  background: url("banner02.png") no-repeat center;
-  background-size: contain;
-  z-index: 1;
-}
 .interests-paragraph {
   padding: 16px;
   font-size: 32px;
@@ -217,7 +245,9 @@ p.customfont {
 }
 
 .interest-item {
-  font-family: "Lora";
+  font-family: "Lora", sans-serif;
+  font-weight: 600;
+  color: #757575;
   padding: 10px 20px;
   border-radius: 8px;
   text-align: center;
@@ -246,15 +276,16 @@ p.customfont {
 }
 
 .project-container {
-  padding-top: 120px;
+  margin-top: 60px;
 }
 
 .project-links {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 50px;
   flex-wrap: wrap;
-  padding: 10px;
+  padding: 40px;
+  z-index: 2;
 }
 
 .project-links a {
@@ -307,4 +338,14 @@ p.customfont {
 .project-links-faintwatch {
   display: flex;
   justify-content: space-between;
+}
+.about-me-container {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  padding: 20px;
+}
+
+.fw-paragraph li {
+  font-family: "Lora", sans-serif;
 }
