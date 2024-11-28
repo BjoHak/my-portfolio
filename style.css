@@ -89,7 +89,6 @@ h2 {
 .face-icon {
   max-width: 800px;
   max-height: 800px;
-
   align-items: center;
   justify-content: center;
 }
@@ -98,6 +97,8 @@ h2 {
     transform: translate(-30%, 0%);
     min-width: 450px;
     min-width: 450px;
+    box-sizing: border-box;
+    overflow: hidden;
   }
 }
 
@@ -286,6 +287,9 @@ p.customfont {
   flex-wrap: wrap;
   padding: 40px;
   z-index: 2;
+}
+.project-links img {
+  border-radius: 20px;
 }
 
 .project-links a {
