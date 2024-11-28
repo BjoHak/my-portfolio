@@ -77,6 +77,17 @@ h2 {
   max-height: 500px;
   align-items: center;
   justify-content: center;
+  opacity: 0;
+  animation: fadeIn 2s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 @media (max-width: 768px) {
   .text-icon {
